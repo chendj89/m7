@@ -26,3 +26,10 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# 自定义
+auto-imports.d.ts
+components.d.ts
+.eslintrc-auto-import.json
+*.zip
+*.rar
