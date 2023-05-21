@@ -9,7 +9,7 @@ const listeners: { name: string; listener: (e: MouseEvent) => void }[] = []
 
 export function drag(wrap: HTMLElement) {
   wrap.style.cursor = 'move'
-  const parent = wrap.parentElement?.parentElement
+  const parent = wrap.parentElement?.parentElement?.parentElement
   if (!parent) {
     return
   }

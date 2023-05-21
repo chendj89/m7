@@ -54,8 +54,12 @@ const dialog = defineComponent({
               class: 'usePluginDialog-content'
             },
             [
-              h('div', { class: 'usePluginDialog-header', ref: 'headerRef' }, [
+              h('div', { class: 'usePluginDialog-header' }, [
                 h('div', {}, this.$props.title),
+                h('div', {
+                  class: 'usePluginDialog-header-drag',
+                  ref: 'headerRef'
+                }),
                 h(NBaseClose, {
                   clsPrefix: 'n',
                   onClick: () => this.$props.onClose()
