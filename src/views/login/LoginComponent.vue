@@ -1,12 +1,13 @@
 <template>
-  <n-el style="padding:50px">
-    <NButton size="small" @click="run">按钮</NButton>
+  <n-el style="padding: 50px">
+    <Menu></Menu>
   </n-el>
 </template>
 
 <script setup lang="ts" name="Login">
 import { usePluginDialog } from '@/plugins/usePluginDialog'
 import UMsg from './tpl/msg.vue'
+import Menu from '@/unity/menu'
 const dialog = usePluginDialog()
 
 const run = async () => {
@@ -20,7 +21,7 @@ const run = async () => {
       }
     }
   })
-  console.log('result=>',result)
+  console.log('result=>', result)
   console.log('2')
 }
 </script>

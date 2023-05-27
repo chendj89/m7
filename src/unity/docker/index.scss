@@ -1,0 +1,12 @@
+.docker {
+  --padding: 15px;
+  --radius: 8px;
+  display: inline-flex;
+  background: #fff;
+  box-shadow: 0 0 0 1px hsla(0, 9.1%, 59%, 0.05), 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  flex-direction: column;
+  width: 260px;
+  height: getHeightByWidth(260px);
+  border-radius: 6px;
+}
