@@ -1,8 +1,6 @@
 <template>
   <div>
-    <uDropdown v-model="options" size="small">
-      <n-button type="primary">添加路由</n-button>
-    </uDropdown>
+    <n-button type="primary">添加路由</n-button>
   </div>
 </template>
 <script lang="ts" setup name="Index">

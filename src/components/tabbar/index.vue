@@ -1,6 +1,6 @@
 <template>
   <div class="vaw-tab-bar-container">
-    <div class="flex items-center">
+    <div style="display: flex; align-items: center;">
       <n-icon
         class="arrow-wrapper"
         :class="{ 'arrow-wrapper__disabled': leftArrowDisabled }"

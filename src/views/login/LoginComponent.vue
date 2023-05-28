@@ -1,6 +1,9 @@
 <template>
   <n-el style="padding: 50px">
     <Widget :data="user"></Widget>
+    <div style="margin-left: 30px">
+      <NButton @click="login">登录</NButton>
+    </div>
   </n-el>
 </template>
 
@@ -58,19 +61,26 @@ const user: IUserMenu = {
         url: 'https://www.douyin.com/user/MS4wLjABAAAAy_5Qqu7TuSqwSyuFNDS2aZ36Oun5447-DDCXdB46HN4?is_search=0&list_name=follow&nt=0',
         icon: 'https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_20f39a49f8a142c6aa4c9a22cd209fb4~c5_300x300.jpeg?from=2956013662'
       },
-      info: {
-        
-      },
-      children: [{
-        name:'《翔人修仙I》',
-        desc:'',
-        icon:'https://p9-sign.douyinpic.com/obj/tos-cn-i-dy/ed22df5e359e4e5b94ddafddff891887?x-expires=1686474000&x-signature=zMlWX9n7POcxSmZBNBaaiIWpHCQ%3D&from=4080365293',
-        url:'https://www.douyin.com/user/MS4wLjABAAAAy_5Qqu7TuSqwSyuFNDS2aZ36Oun5447-DDCXdB46HN4?is_search=0&list_name=follow&modal_id=7066010785926991112&nt=0'
-      }]
+      info: {},
+      children: [
+        {
+          name: '《翔人修仙I》',
+          desc: '',
+          icon: 'https://p9-sign.douyinpic.com/obj/tos-cn-i-dy/ed22df5e359e4e5b94ddafddff891887?x-expires=1686474000&x-signature=zMlWX9n7POcxSmZBNBaaiIWpHCQ%3D&from=4080365293',
+          url: 'https://www.douyin.com/user/MS4wLjABAAAAy_5Qqu7TuSqwSyuFNDS2aZ36Oun5447-DDCXdB46HN4?is_search=0&list_name=follow&modal_id=7066010785926991112&nt=0'
+        }
+      ]
     }
   ]
 }
 // https://codegeex.cn 这个页面直接引用
+import onLoad from './index'
+const router = useRouter()
+const login = () => {
+  onLoad(() => {
+    router.push({ path: '/index' })
+  })
+}
 </script>
 
 <style lang="scss" scoped></style>
