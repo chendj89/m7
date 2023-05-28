@@ -14,4 +14,19 @@ export default [
       },
     ],
   },
+  {
+    menuUrl: "/table",
+    menuName: "Table",
+    routeName: "Table",
+    icon: "icon-table",
+    parentPath: "",
+    children: [
+      {
+        parentPath: "/table",
+        menuUrl: "/table/menu",
+        menuName: "菜单",
+        routeName: "TableMenu",
+      },
+    ],
+  },
 ];

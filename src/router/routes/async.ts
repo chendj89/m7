@@ -26,4 +26,29 @@ export const asyncRoutes = [
       },
     ],
   },
+  {
+    path: "/table",
+    component: LAYOUT,
+    name: "Table",
+    meta: {
+      title: "表格",
+      iconPrefix: "icon",
+      icon: "table",
+    },
+    redirect: "/table/menu",
+    children: [
+      {
+        path: "menu",
+        name: "TableMenu",
+        component: () => import("@/views/table/menu.vue"),
+        meta: {
+          title: "菜单",
+          affix: true,
+          cacheable: true,
+          iconPrefix: "icon",
+          icon: "menu",
+        },
+      },
+    ],
+  },
 ];
