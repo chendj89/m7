@@ -149,7 +149,7 @@ export default defineComponent({
                 display:grid;
                 grid-gap:var(--gap);
                 grid-template-columns: repeat(6, var(--iconSize));
-                grid-template-rows: repeat(3, var(--iconSize));
+                grid-template-rows: repeat(1, var(--iconSize));
                 padding:var(--gap)
               `
                 },

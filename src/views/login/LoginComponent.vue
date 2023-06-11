@@ -57,7 +57,7 @@ const user: IUserMenu = {
     {
       user: {
         name: '菜二代传记',
-        desc: '专注沙雕动画！感谢大家的支持😁',
+        desc: '专注沙雕动画'.padEnd(20,''),
         url: 'https://www.douyin.com/user/MS4wLjABAAAAy_5Qqu7TuSqwSyuFNDS2aZ36Oun5447-DDCXdB46HN4?is_search=0&list_name=follow&nt=0',
         icon: 'https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_20f39a49f8a142c6aa4c9a22cd209fb4~c5_300x300.jpeg?from=2956013662'
       },
